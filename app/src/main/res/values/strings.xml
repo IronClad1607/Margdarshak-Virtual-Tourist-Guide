@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Virtual Tourist Guide</string>
     <string name="virtual_tourist_guide">Virtual Tourist Guide</string>
+    <string name="please_log_in">Please Log In</string>
+    <string name="login_with_phone">LogIn with Phone</string>
+    <string name="enter_phone_number">Enter Phone Number:</string>
 </resources>
