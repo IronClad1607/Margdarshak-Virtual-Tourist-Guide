@@ -30,7 +30,7 @@
         android:id="@+id/btnSubmit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Get OTP"
+        android:text="@string/get_otp"
         android:textColor="@android:color/white"
         android:textSize="20sp" />
 

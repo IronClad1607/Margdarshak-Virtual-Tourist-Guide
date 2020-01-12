@@ -4,4 +4,7 @@
     <string name="please_log_in">Please Log In</string>
     <string name="login_with_phone">LogIn with Phone</string>
     <string name="enter_phone_number">Enter Phone Number:</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="know_about_monument">Know About Monument!</string>
+    <string name="history">History!</string>
 </resources>

@@ -3,6 +3,7 @@ package com.systemtron.virtualtouristguide.login
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import com.google.firebase.FirebaseException
 import com.google.firebase.auth.FirebaseAuth
@@ -37,6 +38,9 @@ class PhoneLoginActivity : AppCompatActivity() {
 
             override fun onVerificationFailed(p0: FirebaseException) {
 
+                Log.d("PUI",p0.localizedMessage)
+                Toast.makeText(this@PhoneLoginActivity, "${p0.localizedMessage}", Toast.LENGTH_LONG)
+                    .show()
             }
 
             override fun onCodeSent(p0: String, p1: PhoneAuthProvider.ForceResendingToken) {
@@ -54,7 +58,7 @@ class PhoneLoginActivity : AppCompatActivity() {
 
         btnSubmit.setOnClickListener {
             PhoneAuthProvider.getInstance()
-                .verifyPhoneNumber("+91$etPhone.text", 60, TimeUnit.SECONDS, this, callback)
+                .verifyPhoneNumber("+91${etPhone.text}", 60, TimeUnit.SECONDS, this, callback)
         }
 
 
@@ -62,8 +66,14 @@ class PhoneLoginActivity : AppCompatActivity() {
 
     private fun signInWithPhone(p0: PhoneAuthCredential) {
         auth.signInWithCredential(p0)
-            .addOnCompleteListener {}
-            .addOnFailureListener { }
-            .addOnSuccessListener { }
+            .addOnCompleteListener {
+
+            }
+            .addOnFailureListener {
+
+            }
+            .addOnSuccessListener {
+
+            }
     }
 }
