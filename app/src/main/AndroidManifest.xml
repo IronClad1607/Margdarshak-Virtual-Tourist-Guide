@@ -9,10 +9,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".HomeActivity"></activity>
-        <activity android:name=".login.PhoneLoginActivity" />
+        <activity android:name=".features.CaptureActivity" />
+        <activity android:name=".HomeActivity" />
         <activity android:name=".login.LoginActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
