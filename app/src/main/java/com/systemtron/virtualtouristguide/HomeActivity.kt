@@ -1,9 +1,11 @@
 package com.systemtron.virtualtouristguide
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
+import com.systemtron.virtualtouristguide.features.kym.CaptureActivity
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
@@ -13,7 +15,8 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
 
         btnCapture.setOnClickListener {
-            
+            val intent = Intent(this,CaptureActivity::class.java)
+            startActivity(intent)
         }
 
         btnHistory.setOnClickListener {

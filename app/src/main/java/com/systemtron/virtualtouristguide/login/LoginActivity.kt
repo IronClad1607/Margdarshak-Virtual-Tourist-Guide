@@ -20,8 +20,6 @@ import java.util.concurrent.TimeUnit
 
 class LoginActivity : AppCompatActivity() {
 
-
-    var isLogined :Boolean = false
     private val auth: FirebaseAuth by lazy {
         FirebaseAuth.getInstance()
     }
@@ -44,8 +42,6 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this@LoginActivity, "Verification Complete", Toast.LENGTH_LONG)
                     .show()
                 signInWithPhone(p0)
-
-                isLogined = true
                 val intent = Intent(applicationContext, HomeActivity::class.java)
                 startActivity(intent)
 
