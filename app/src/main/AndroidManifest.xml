@@ -4,14 +4,13 @@
     package="com.systemtron.virtualtouristguide">
 
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <meta-data
         android:name="com.google.firebase.ml.vision.DEPENDENCIES"
         android:value="ocr,face,barcode,label" />
-
 
     <application
         android:allowBackup="true"
@@ -21,6 +20,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".features.kym.DetailActivity"></activity>
         <activity android:name=".features.kym.CaptureActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".login.LoginActivity" />
@@ -31,7 +31,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />

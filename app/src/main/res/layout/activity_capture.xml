@@ -18,12 +18,6 @@
         android:layout_height="600dp"
         android:visibility="gone"/>
 
-    <Button
-        android:id="@+id/btnClick"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/click" />
 
 
     <TextView

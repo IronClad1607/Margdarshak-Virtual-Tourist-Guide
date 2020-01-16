@@ -13,8 +13,11 @@ import com.google.firebase.ml.vision.cloud.FirebaseVisionCloudDetectorOptions
 import com.google.firebase.ml.vision.cloud.landmark.FirebaseVisionCloudLandmark
 import com.google.firebase.ml.vision.common.FirebaseVisionImage
 import com.systemtron.virtualtouristguide.R
+import com.systemtron.virtualtouristguide.features.kym.model.Landmark
+import com.systemtron.virtualtouristguide.features.kym.model.LatLong
 import com.theartofdev.edmodo.cropper.CropImage
 import kotlinx.android.synthetic.main.activity_capture.*
+import java.lang.Exception
 
 class CaptureActivity : AppCompatActivity() {
 
@@ -24,11 +27,8 @@ class CaptureActivity : AppCompatActivity() {
         setContentView(R.layout.activity_capture)
 
         tvName.visibility = View.GONE
+        CropImage.activity().start(this)
 
-        btnClick.setOnClickListener {
-            CropImage.activity().start(this)
-
-        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -69,15 +69,21 @@ class CaptureActivity : AppCompatActivity() {
     }
 
     private fun recognizeLandmarks(landmarks: List<FirebaseVisionCloudLandmark>?, image: Bitmap?) {
-        if(landmarks == null || image == null){
-            Toast.makeText(this,"Error 3",Toast.LENGTH_SHORT).show()
+        if (landmarks == null || image == null) {
+            Toast.makeText(this, "Error 3", Toast.LENGTH_SHORT).show()
             return
         }
 
-        val name = landmarks[0].landmark
+        try {
+            val name = landmarks[0].landmark
 
-        tvName.visibility = View.VISIBLE
-        tvName.text = name
+
+            val intent = Intent(this, DetailActivity::class.java)
+            intent.putExtra("pass", name)
+            startActivity(intent)
+        } catch (e: Exception) {
+            Toast.makeText(this, "Landmark Not Recognized!", Toast.LENGTH_SHORT).show()
+        }
     }
 }
 
