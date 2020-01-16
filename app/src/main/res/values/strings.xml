@@ -11,4 +11,8 @@
     <string name="click">Click</string>
     <string name="name_idhaar_aayegaa">Name Idhaar Aayegaa!</string>
     <string name="you_are_at">You are at:</string>
+    <string name="hisM">History:</string>
+    <string name="architecture">Architecture</string>
+    <string name="visiting_time">Visiting Time</string>
+    <string name="entry_fee">Entry Fee</string>
 </resources>
