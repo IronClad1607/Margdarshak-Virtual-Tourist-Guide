@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/tileColor"
     android:orientation="vertical"
     tools:context=".HomeActivity">
 
@@ -11,7 +12,7 @@
         android:id="@+id/toolbaar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
+        android:background="@color/cardGrey"
         android:theme="@style/Widget.AppCompat.Light.ActionBar"
         app:titleTextColor="@android:color/white" />
 
@@ -21,8 +22,10 @@
         android:layout_width="match_parent"
         android:textAllCaps="false"
         android:layout_marginTop="200dp"
+        android:textColor="@android:color/white"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
+        android:background="@color/cardGrey"
         android:layout_marginBottom="50dp"
         android:layout_height="wrap_content"
         android:text="@string/know_about_monument"
@@ -33,6 +36,8 @@
         android:layout_width="match_parent"
         android:textAllCaps="false"
         android:layout_marginRight="20dp"
+        android:background="@color/cardGrey"
+        android:textColor="@android:color/white"
         android:layout_marginLeft="20dp"
         android:layout_height="wrap_content"
         android:text="@string/history"

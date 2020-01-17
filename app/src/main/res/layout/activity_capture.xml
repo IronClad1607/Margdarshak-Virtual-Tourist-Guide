@@ -4,27 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
     android:padding="20dp"
     tools:context=".features.kym.CaptureActivity">
 
 
-
     <ImageView
         android:id="@+id/lr_imageview"
-        android:src="@android:color/holo_red_dark"
         android:layout_width="match_parent"
         android:layout_height="600dp"
-        android:visibility="gone"/>
-
+        android:src="@android:color/holo_red_dark"
+        android:visibility="gone" />
 
 
     <TextView
         android:id="@+id/tvName"
-        android:text="@string/name_idhaar_aayegaa"
-        android:textSize="20sp"
-        android:textColor="@android:color/black"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@string/let_me_look_through_the_pages_of_history"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:visibility="gone" />
 </LinearLayout>

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/tileColor"
     tools:context=".features.kym.DetailActivity">
 
 
@@ -17,7 +18,7 @@
             android:id="@+id/toolbaar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorPrimary"
+            android:background="@color/cardGrey"
             android:theme="@style/Widget.AppCompat.Light.ActionBar"
             app:titleTextColor="@android:color/white" />
 
@@ -26,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:textColor="@android:color/black"
+            android:textColor="@color/mNameColor"
             android:textSize="30sp"
             tools:text="Monument's Name" />
 
@@ -35,13 +36,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:background="@color/cardGrey"
             android:elevation="8dp"
             app:cardCornerRadius="8dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/cardGrey"
                 android:orientation="vertical"
                 android:padding="8dp">
 
@@ -49,14 +50,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/hisM"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/tvHistory"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="15sp"
                     tools:text="@string/hisM" />
             </LinearLayout>
@@ -75,6 +76,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/cardGrey"
                 android:orientation="vertical"
                 android:padding="8dp">
 
@@ -82,14 +84,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/architecture"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/tvArch"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="15sp"
                     tools:text="@string/hisM" />
             </LinearLayout>
@@ -109,20 +111,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:background="@color/cardGrey"
                 android:padding="8dp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/visiting_time"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/tvVT"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="15sp"
                     tools:text="@string/hisM" />
             </LinearLayout>
@@ -142,20 +145,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:background="@color/cardGrey"
                 android:padding="8dp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/entry_fee"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/tvEntry"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="15sp"
                     tools:text="@string/hisM" />
             </LinearLayout>

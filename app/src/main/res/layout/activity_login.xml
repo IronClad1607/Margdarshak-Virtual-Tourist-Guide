@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/tileColor"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".login.LoginActivity">
@@ -15,7 +16,7 @@
         android:layout_marginBottom="50dp"
         android:gravity="center|top"
         android:text="@string/please_log_in"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:textSize="20sp" />
 
 
@@ -23,26 +24,32 @@
         android:id="@+id/btnPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/login_with_phone" />
+        android:background="@color/cardGrey"
+        android:text="@string/login_with_phone"
+        android:textColor="@android:color/white" />
 
     <EditText
         android:id="@+id/etPhone"
-        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:hint="@string/enter_phone_number"
         android:layout_marginBottom="50dp"
+        android:hint="@string/enter_phone_number"
         android:inputType="phone"
-        android:textSize="20sp" />
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="20sp"
+
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/btnSubmit"
-        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/cardGrey"
         android:text="@string/get_otp"
-        android:textColor="@android:color/black"
-        android:textSize="20sp" />
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:visibility="gone" />
 
 </LinearLayout>

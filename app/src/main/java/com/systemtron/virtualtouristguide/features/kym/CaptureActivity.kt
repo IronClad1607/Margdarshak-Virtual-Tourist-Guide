@@ -52,6 +52,7 @@ class CaptureActivity : AppCompatActivity() {
         }
 
         lr_imageview.visibility = View.VISIBLE
+        tvName.visibility = View.VISIBLE
         lr_imageview.setImageBitmap(image)
 
         val firebaseVisionImage = FirebaseVisionImage.fromBitmap(image)
