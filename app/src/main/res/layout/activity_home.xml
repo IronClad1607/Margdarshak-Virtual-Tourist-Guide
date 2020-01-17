@@ -5,15 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="20sp"
     tools:context=".HomeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbaar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/Widget.AppCompat.Light.ActionBar"
+        app:titleTextColor="@android:color/white" />
 
 
     <Button
         android:id="@+id/btnCapture"
         android:layout_width="match_parent"
         android:textAllCaps="false"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginBottom="50dp"
         android:layout_height="wrap_content"
         android:text="@string/know_about_monument"
@@ -23,6 +32,8 @@
         android:id="@+id/btnHistory"
         android:layout_width="match_parent"
         android:textAllCaps="false"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_height="wrap_content"
         android:text="@string/history"
         android:textSize="20sp" />
