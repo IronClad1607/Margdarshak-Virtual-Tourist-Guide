@@ -67,3 +67,11 @@ The various features in ***Margdarshak*** App.
 		</td>
 	</tr>
 </table>
+
+
+## Technology Stack
+ - Kotlin
+ - XML
+ - Firebase Authentication
+ - Firebase Real Time Database
+ - Firebase ML Kit
