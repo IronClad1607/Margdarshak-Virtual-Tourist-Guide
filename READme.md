@@ -77,4 +77,4 @@ The various features in ***Margdarshak*** App.
  - Firebase ML Kit
 
 
- Built with :heart: by [@IronClad1607](https://github.com/IronClad1607), [@vibhuvj27](https://github.com/vibhuvj27), [@satvik1998](https://github.com/satvik1998), [@Jagannath7](https://github.com/Jagannath7)
+ Built with :heart: by [@IronClad1607](https://github.com/IronClad1607), [@vibhuvj27](https://github.com/vibhuvj27), [@satvik1998](https://github.com/satvik1998), [@Jagannath7](https://github.com/Jagannath7), [@vsargam02](https://github.com/vsargam02)
