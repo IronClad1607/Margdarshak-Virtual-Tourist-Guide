@@ -75,3 +75,6 @@ The various features in ***Margdarshak*** App.
  - Firebase Authentication
  - Firebase Real Time Database
  - Firebase ML Kit
+
+
+ Built with :heart: by @IronClad1607, @vibhuvj27, @satvik1998, @Jagannath7
