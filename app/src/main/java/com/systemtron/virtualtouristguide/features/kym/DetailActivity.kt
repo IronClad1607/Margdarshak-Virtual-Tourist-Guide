@@ -109,6 +109,15 @@ class DetailActivity : AppCompatActivity() {
             Toast.makeText(this, "Logged Out Successfully", Toast.LENGTH_LONG).show()
             true
         }
+        R.id.langENG -> {
+            runOnUiThread {
+                tvArch.text = arch
+                tvHistory.text = history
+                tvEntry.text = fee
+                tvVT.text = vt
+            }
+            true
+        }
         R.id.langGER -> {
             translateGerman(arch, history, fee, vt)
             true

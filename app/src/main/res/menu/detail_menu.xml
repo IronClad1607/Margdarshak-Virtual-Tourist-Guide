@@ -8,6 +8,9 @@
         android:id="@+id/btnLang"
         <menu>
             <item
+                android:title="@string/english"
+                android:id="@+id/langENG"/>
+            <item
                 android:title="@string/hindi"
                 android:id="@+id/langHIN"/>
             <item
