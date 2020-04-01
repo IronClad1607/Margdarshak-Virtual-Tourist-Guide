@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item tools:ignore="ExtraText"
+        android:title="@string/language_change">
+        android:id="@+id/btnLang"
+        <menu>
+            <item
+                android:title="@string/hindi"
+                android:id="@+id/langHIN"/>
+            <item
+                android:title="@string/german"
+                android:id="@+id/langGER"/>
+
+        </menu>
+    </item>
     <item
         android:id="@+id/btnSignout"
-        android:title="@string/sign_out" />
+        android:title="@string/sign_out"
+        app:showAsAction="never"/>
+
 </menu>
