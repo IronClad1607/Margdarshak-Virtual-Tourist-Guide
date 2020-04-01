@@ -9,11 +9,11 @@ Our Virtual Tour Guide App is one of its kind as there is no other app which res
 The various features in ***Margdarshak*** App.
 
 - **Recognization**: Recognize the monument through capturing an image.
+- **Language Translation**: App communicates in whatever language the user is comfortable in.The details can be generated in any language according to the user’s comfort.
 
 ####
  To be implemented:
 
-- **Language Translation**: App communicates in whatever language the user is comfortable in.The details can be generated in any language according to the user’s comfort.
 - **Text-to-Speech**: The app can read aloud the details for people who have difficulty in reading or are visually impaired.
 - **Reviews About Monument**: The app will allow user to add a review about the monument like the facilities provided there, about the architecture of the monument etc.The review can be submitted immediately or the app will generate a notification after 4 hrs of recognization, to submit a review.
 - **Share on Social Media Platform**: The user can share the picture that he/she has clicked on the social media platforms directly from the app. 
