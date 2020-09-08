@@ -52,7 +52,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:19.2.1'
     implementation 'com.google.firebase:firebase-auth:19.3.2'
     implementation 'com.google.firebase:firebase-ml-natural-language:22.0.1'
-    implementation 'com.google.firebase:firebase-ml-natural-language-translate-model:20.0.7'
+    implementation 'com.google.firebase:firebase-ml-natural-language-translate-model:20.0.9'
 
     implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
     implementation 'com.otaliastudios:cameraview:2.6.4'
