@@ -50,7 +50,7 @@ dependencies {
 
     implementation 'com.google.firebase:firebase-ml-vision:24.1.0'
     implementation 'com.google.firebase:firebase-database:19.2.1'
-    implementation 'com.google.firebase:firebase-auth:19.3.2'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
     implementation 'com.google.firebase:firebase-ml-natural-language:22.0.1'
     implementation 'com.google.firebase:firebase-ml-natural-language-translate-model:20.0.9'
 
